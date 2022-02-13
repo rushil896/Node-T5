@@ -6,7 +6,7 @@ var route = require('./route')
 var bodyParser =require('body-parser')
 //mongodb+srv://pharmasite.uoqsu.mongodb.net/myFirstDatabase
 //mongodb+srv://Rushil:a44TvRvfzLOysO4a@cluster0.ywmt1.mongodb.net/Info?retryWrites=true&w=majority
-mongoose.connect('mongodb+srv://pharmasite.uoqsu.mongodb.net/Info').then(()=>{
+mongoose.connect('mongodb+srv://pharmasite.uoqsu.mongodb.net/Info?retryWrites=true&w=majority').then(()=>{
     console.log('DB Connected....')
 
     app = express();
